@@ -1,6 +1,17 @@
-function getArray(isPart) {
-  isPart = true;
+function checkYuGiOh(n) {
+  // input = true;
+  var arr = Array.from({ length: n }, (_, i) => i + 1);
+  if (arr[i] % 2 == 0) {
+    arr[i] = "yu";
+  } else if (arr[i] % 3 == 0) {
+    arr[i] = "gi";
+  } else if (arr[i] % 5 == 0) {
+    arr[i] = "oh";
+  }
+  return arr;
 }
+
+console.log(checkYuGiOh(8));
 
 // 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array.
 
