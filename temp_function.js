@@ -1,6 +1,9 @@
-function getValue(isTemperature) {
-  isTemperature = true;
+function convertFahrToCelsius(F) {
+  // isTemperature = true;
+  let C = (F - 32) * (5 / 9);
+  return C;
 }
+console.log(convertFahrToCelsius(0));
 
 // 1. Write a function named "convertFahrToCelsius" that takes a single parameter and converts it to celsius.
 
